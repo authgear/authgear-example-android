@@ -10,7 +10,7 @@ Import project to Android Studio, Sync Gradle
 
 The project needs to be configured with your Authgear client application's **Endpoint** and **Client ID** in order for the authentication flow to work.
 
-To do this, open `Constants.kt`, and replace `"<AUTHGEAR_CLIENT_ID>"`, `"<AUTHGEAR_ENDPOINT>"` with with your own Authgear client application credentials.
+To do this, open `app/src/main/java/com/example/authgeardemo/Constants.kt`, and replace `"<AUTHGEAR_CLIENT_ID>"`, `"<AUTHGEAR_ENDPOINT>"` with with your own Authgear client application credentials.
 
 To run this example app, add the following URI to your Authgear client application's Authorized Redirect URI:
 
