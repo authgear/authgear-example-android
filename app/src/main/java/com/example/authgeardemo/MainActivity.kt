@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
         binding.progressBar.visibility =  View.VISIBLE
 
-        authgear = Authgear(application, "<ClIENT_ID>", "<AUTHGEAR_ENDPOINT>")
+        authgear = Authgear(application, Constants.AUTHGEAR_CLIENT_ID, Constants.AUTHGEAR_ENDPOINT)
         authgear.configure(object : OnConfigureListener {
             override fun onConfigured() {
                 // Authgear can be used.
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
 
     fun startLogin() {
         binding.progressBar.visibility =  View.VISIBLE
-        val options = AuthenticateOptions("com.example.authgeardemo://host/path")
+        val options = AuthenticateOptions(Constants.AUTHGEAR_REDIRECT_URI)
         authgear.authenticate(options, object : OnAuthenticateListener {
             override fun onAuthenticated(userInfo: UserInfo) {
 
