@@ -4,7 +4,13 @@ This repo demonstrates how to add authentication to an Android app using Authgea
 
 ## Project setup
 
-Import project to Android Studio, Sync Gradle
+### Create Free Authgear Account
+1. Goto [https://portal.authgear.com](https://portal.authgear.com) and create a free account (or login to your existing account).
+
+2. Then navigate to Applications and create a new client application of type Native App.
+
+### Import project to Android Studio
+Clone this repo and import to Android Studio, Sync Gradle
 
 ### Configuration
 
@@ -15,6 +21,8 @@ To do this, open `app/src/main/java/com/example/authgeardemo/Constants.kt`, and 
 To run this example app, add the following URI to your Authgear client application's Authorized Redirect URI:
 
 - `com.example.authgeardemo://host/path`
+
+See the full tutorial for this demo app [Here](https://docs.authgear.com/get-started/native-mobile-app/android).
 
 
 ## What is Authgear?
